@@ -21,7 +21,12 @@ module.exports=(env)=>{
                   use:[{
                     loader:MiniCssExtractPlugin.loader
                   },
-                "css-loader"] 
+                {
+                  loader:"css-loader",
+                  options:{
+                    sourceMap:true
+                  }
+                }] 
               },
               {
                 test: /\.(gif|png|jpe?g|svg)$/i,
@@ -41,7 +46,7 @@ module.exports=(env)=>{
             ]
      },
      plugins:[new MiniCssExtractPlugin()],
-     devtool: idProduction?"source-map":'cheap-module-eval-source-map',
+     devtool: idProduction?"source-map":'inline-source-map',
      devServer:{
          contentBase:path.join(__dirname,"public"),
          historyApiFallback:true
