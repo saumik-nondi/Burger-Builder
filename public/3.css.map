@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/styles/componenets/Order.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA,C","file":"3.css","sourcesContent":[".Order{\r\n    width:100%;\r\n    border:1px solid purple;\r\n    box-shadow: 0 2px 3px red;\r\n    padding:10px;\r\n    margin:70px auto;\r\n    box-sizing: border-box\r\n}"],"sourceRoot":""}

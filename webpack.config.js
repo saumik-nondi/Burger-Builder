@@ -1,5 +1,9 @@
 const path=require("path");
-module.exports={
+const MiniCssExtractPlugin=require("mini-css-extract-plugin")
+
+module.exports=(env)=>{
+  const idProduction=env==="production";
+  return{
     entry:"./src/app.js",
     mode:"development",
     
@@ -14,9 +18,10 @@ module.exports={
                 exclude:/node_modules/
               },{
                   test:/\.s?css$/,
-                  use:['style-loader',
-                       "css-loader",
-                        'sass-loader']
+                  use:[{
+                    loader:MiniCssExtractPlugin.loader
+                  },
+                "css-loader"] 
               },
               {
                 test: /\.(gif|png|jpe?g|svg)$/i,
@@ -33,13 +38,14 @@ module.exports={
               }
             
             
-            
             ]
      },
-     devtool:'cheap-module-eval-map',
+     plugins:[new MiniCssExtractPlugin()],
+     devtool: idProduction?"source-map":'cheap-module-eval-source-map',
      devServer:{
          contentBase:path.join(__dirname,"public"),
          historyApiFallback:true
 
      }
+  }
 }

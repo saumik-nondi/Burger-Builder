@@ -1,0 +1,10 @@
+.Order{
+    width:100%;
+    border:1px solid purple;
+    box-shadow: 0 2px 3px red;
+    padding:10px;
+    margin:70px auto;
+    box-sizing: border-box
+}
+
+/*# sourceMappingURL=3.css.map*/
