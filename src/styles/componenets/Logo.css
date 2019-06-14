@@ -1,0 +1,25 @@
+.Logo{
+    height:100%;
+    margin-top:28px;
+}
+
+.LogoSide{
+    height:100%;
+    margin-top:0px;
+}
+
+.Logo img{
+    margin:0px;
+    padding:0px;
+    height:100%;
+    width:80px;
+
+}
+
+.LogoSide img{
+    margin:0px;
+    padding-left:50px;
+    height:100%;
+    width:150px;
+
+}

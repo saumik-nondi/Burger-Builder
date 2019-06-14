@@ -1,0 +1,39 @@
+.Price{
+   text-align: center;
+}
+.Price b{
+
+}
+
+.a{
+    text-align: center;
+}
+
+.BuildControls{
+    width:100%;
+    background-color:rgb(127, 189, 12);
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+    box-shadow:0 2px 1px rgb(5, 73, 41);
+    margin:auto;
+    padding:10px
+
+
+}
+.orderButton{
+
+    border: none;
+    background-color:#7fbd0c;
+    border-radius:5px;
+    color: black;
+    font-size:25px;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding:20px;
+    margin-top:20px;
+    margin-bottom:10px;
+    font-weight: bold;
+
+}
